@@ -54,7 +54,7 @@ const Navbar = () => {
               <Text fontWeight="extrabold"> Techlines</Text>
             </Flex>
           </Link>
-          <HStack as='nav' spacing={4} display={{base:'none', md:'flex'}}>
+          <HStack as="nav" spacing={4} display={{ base: "none", md: "flex" }}>
             {links.map((link) => (
               <NavLink key={link.linkName} path={link.path}>
                 {link.linkName}
@@ -78,12 +78,13 @@ const Navbar = () => {
             as={ReactLink}
             to="/registration"
             m={2}
-            display={{base:'none', md:'inline-flex'}}
+            display={{ base: "none", md: "inline-flex" }}
             fontSize="sm"
             fontWeight={600}
             _hover={{ bg: "orange.400" }}
             bg="orange.500"
-            color="white">
+            color="white"
+          >
             Sign Up
           </Button>
         </Flex>
@@ -96,9 +97,9 @@ const Navbar = () => {
                 {link.linkName}
               </NavLink>
             ))}
-            <NavLink key='sign up' path='/registration'>
-                Sign Up
-                </NavLink>
+            <NavLink key="sign up" path="/registration">
+              Sign Up
+            </NavLink>
           </Stack>
         </Box>
       ) : null}
